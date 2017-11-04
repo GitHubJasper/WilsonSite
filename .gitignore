@@ -1,0 +1,9 @@
+node_modules/
+discord_bot/*
+
+src/auth.json
+src/data.json
+
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries

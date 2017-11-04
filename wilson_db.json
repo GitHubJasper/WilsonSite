@@ -1,0 +1,12 @@
+{
+	"name":"wilson",
+	"version":"1.0.0",
+	"folder":"/discord_bot/wilson/",
+	"additional":[{"file":"auth.json","path":"src/"},{"file":"data.json","path":"src/"}],
+	"auto_update":false,
+	"modules":["discord.js","yahoo-weather","ytdl-core","sqlite","steam-web","tinyreq","cheerio","ffmpeg","node-opus","opusscript"],
+	"installed":[],
+    "online":false,
+    "status":"Ready",
+	"git_URL":"https://github.com/GitHubJasper/wilson.git"
+}

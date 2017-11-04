@@ -1,0 +1,268 @@
+body {
+	font-family: Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+	color: #fff;
+	background-color:rgb(42, 46, 51);
+	margin:0;
+}
+
+#console{
+    flex: 1 1 auto;
+    background-color:rgb(78, 82, 85);
+    width: 100%;
+    max-height: 125px;
+    color: #fff;
+    line-height: 18px;
+    overflow: auto;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    vertical-align: baseline;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-size:auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-color:rgba(255, 255, 255, 0.498);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-outset:0px;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgba(255, 255, 255, 0.498);
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-color:rgba(255, 255, 255, 0.498);
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-color:rgba(255, 255, 255, 0.498);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-top-style:none;
+    border-top-width:0px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 1px 10px 0px;
+}
+
+.info {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.9);    
+    display: inline-block;
+    text-align:left;
+    width:700px;
+    font-size: 13px;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    vertical-align: baseline;
+    background-color:#35393C;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-size:auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-color:rgba(255, 255, 255, 0.498);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-outset:0px;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgba(255, 255, 255, 0.498);
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-color:rgba(255, 255, 255, 0.498);
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-color:rgba(255, 255, 255, 0.498);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-top-style:none;
+    border-top-width:0px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 1px 10px 0px;
+    color:rgba(255, 255, 255, 0.498);
+}
+.row {
+    display: flex;
+    height: 100%;
+    width: 700px;
+    vertical-align: baseline;
+}
+.info_text {
+    font-weight: 500px;
+}
+
+.label {
+    color: #fff;
+    font-size: 11px;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.input-half{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    width:350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+a{
+    text-decoration-color:rgb(28, 144, 196);
+    outline-color:rgb(28, 144, 196);
+    color:rgb(28, 144, 196);
+}
+
+.download{
+    background: url("images/download.png");
+    background-size: 100%;
+    cursor:pointer;
+    border:none;
+    width:15px;
+    height:15px;
+}
+.download:active  /* use Dot here */
+{   
+    background: url("images/download.png") no-repeat;
+}
+
+.input{
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color:rgb(67, 181, 129);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    color:rgba(255, 255, 255,0.9);
+    text-align: center;
+}
+.inputButton{
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color:rgb(114, 137, 218);
+    cursor:pointer;
+    text-align: center;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-width:1;
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-top-style: none;
+    border-top-width:0px;
+    padding-bottom:1px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:1px;
+    margin-bottom:10px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:10px;
+    font-size: 15px;
+    font-weight: 500px;
+    color:rgb(255, 255, 255);
+}
+
+.playButton{
+    cursor:pointer;
+    background-color:rgba(0, 0, 0, 0);
+    border-top-width:0px;
+    border-bottom-width:0px;
+    border-right-width:0px;
+    border-left-width:0px;
+    margin: 10px;
+}
+
+.add{
+    background: url("images/add.png");
+    background-size: 100%;
+    cursor:pointer;
+    border:none;
+    position: relative;
+    width:18px;
+    height:18px;
+}
+
+.uploadFile{
+    background: url("images/add.png");
+    background-size: 100%;
+    cursor:pointer;
+    border:none;
+    width:18px;
+    height:18px;
+    right: 0px;
+    top: 0px; 
+    margin: 0px; 
+    padding: 0px; 
+    opacity: 0;
+}
+
+.remove{
+    background: url("images/remove.png");
+    background-size: 100%;
+    background-position-y: 2px;
+    cursor:pointer;
+    border:none;
+    width:18px;
+    height:18px;
+}
+
+
+.content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content.full{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#container {
+    display: block;
+	margin-left:auto;
+    margin-right:auto;
+    text-rendering: optimizeLegibility;
+    font-style:normal;
+    font-weight: normal;
+	text-align:center;
+    line-height: 24px;
+    width: 700px;
+}
+
+a img {
+	border:none;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(fonts/Whitney_normal.woff);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Whitney;
+    src: url(fonts/Whitney_bold.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Whitney;
+    src: url(fonts/Whitney_light.woff);
+    font-weight: lighter;
+}

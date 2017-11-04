@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Wilson's operation center</title>
+<link rel="stylesheet" href="style.css"></style>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="ajax_client.js"></script>
+<script src="html_interaction.js"></script>
+<script src="client_javascript.js"></script>
+</head>
+<body>
+	<div id="container">
+		<h1>Wilson's operation center </h1>
+		<div id="loading">
+			<div class="row">
+				<label class="label">Connecting to server...</label>
+			</div>
+		</div>
+		<div class="info" style="display:none">
+			<div class="row">
+				<div class="input-half">
+					<label class="label">Bot Details</label>
+					<div class="bot-details">
+						<div class="info_text" id="name"><strong>name:</strong> <foo></foo></div>
+						<div class="info_text" id="git"><strong>git:</strong> <a href=""></a></div>
+						<div class="info_text" id="version"><strong>version:</strong> <foo></foo></div>
+						<div class="info_text" id="auto_update"><strong>auto-update:</strong> <foo></foo></div>
+						<div class="info_text" id="status"><strong>status:</strong> <foo></foo></div>
+						<button onclick="logRequest('start')" class="playButton" id="play"><img src="images/play-green.png" height="25px" width="25px"></button>
+					</div>
+				</div>
+				<div class="input-half">
+					<label style="white-space: pre-line" class="label">Bot console</label>
+					<div id="console"></div>
+				</div>
+			</div>
+		</div>
+		<div class="info" style="display:none">
+			<div class="row">
+				<div class="input-half">
+					<label class="label">Version control</label>
+					<div class="content">
+						<div><input type="text" class="input" placeholder="git-URL" id="git_input"></input></div>
+						<button onclick="git('clone')" class="inputButton" type="button">Clone master</button>
+						<button onclick="git('pull')" class="inputButton" type="button">Pull master</button>
+					</div>
+				</div>	
+				<div class="input-half">
+					<label class="label">Manual version control</label>
+					<div class="content">
+						<div>
+							<!--<button onclick="send('upload')" class="inputButton" type="button">Upload zip</button>
+							<button onclick="send('download')" class="inputButton" type="button">Download zip</button>-->
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="info"style="display:none">
+			<div class="row">
+				<div class="input-half">
+					<label class="label">Modules</label>
+					<table> 
+						<tbody id="modulesTable">
+							<tr>
+								<th>
+									<input type="text" class="input" placeholder="Module" id="git_input"></input>
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<input type="text" class="input" placeholder="Module" id="git_input"></input>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<button onClick="addModule('')" class='add'> </button>
+				</div>	
+				<div class="input-half">
+					<label class="label">Additional files</label>
+					<table>
+						<tbody id="additionalTable">
+							<tr>
+								<th>
+									<input type="text" class="input" placeholder="Directory" id="git_input"></input>
+								</th>
+								<th>
+									auth.json
+								</th>
+							</tr>
+							<tr>
+								<th>
+									<input type="text" class="input" placeholder="Directory" id="git_input"></input>
+								</th>
+								<th>
+									db.json
+								</th>
+							</tr>
+						</tbody>
+					</table>
+					<div class='add'></div><input type='file' id="fileSelector"class='uploadFile' onchange="uploadFile()" size="18" style="position: relative; top:-18px;"></input></div>
+				</div>	
+				<div style="text-align:center">
+						<button onclick="saveSettings()" class="inputButton" type="button">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
